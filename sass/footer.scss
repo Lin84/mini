@@ -1,0 +1,36 @@
+// --- .footer ----------------------------------------------------------------
+.footer{
+	text-align:center;
+	background-color:#000000;
+	&__paragraph{
+		font-family: "ProximaNova-bold";
+		color: #4d4d4d;
+		font-size: 9px; /* Approximation due to font substitution */
+		font-weight: 700;
+		display:inline-block;
+		vertical-align: middle;
+		margin-right:8px;
+	}
+}
+
+@media(min-width:800px){
+	.footer{
+		text-align:center;
+		background-color:#000000;
+
+		text-align:right;
+		height:100px;
+		&__paragraph{
+			font-family: "ProximaNova-bold";
+			color: #4d4d4d;
+			font-size: 9px; /* Approximation due to font substitution */
+			font-weight: 700;
+			display:inline-block;
+			vertical-align: middle;
+			margin-right:8px;
+
+			// margin-top:40px;
+
+		}
+	}	
+}

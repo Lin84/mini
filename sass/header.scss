@@ -1,0 +1,57 @@
+// --- header -----------------------------------------------------------------
+
+.header{
+	div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p,form,i{
+		// border: 1px dashed red;
+	}
+	left: 0;
+	position: fixed;
+	right:0;
+	z-index: 9999;
+	background-color:#ffffff;
+	border-bottom:1px solid #00a7ac;	
+	.navbar-header{
+		.navbar-toggle{
+			float:right;
+			width:40px;
+			height:43px;
+			background-color: #00a7ac;
+			padding:6px 8px;
+			text-align:center;
+			// margin-top:10px;
+			.navbar-toggle__icon-bar{
+				height:2px;
+				display:block;
+				background-color:#ffffff;
+				margin-bottom:5px;
+			}
+			.navbar-toggle__icon-bar_last{
+				margin-bottom:0;
+			}
+		}
+	}
+	.navbar{
+		display:none;
+	}
+}
+ 
+@media (min-width:800px){
+	.header{
+		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p,form,i{
+			// border: 1px dashed red;
+		}
+		border-bottom:none;	
+		.navbar-header{
+			.navbar-toggle{
+				display:none;
+			}
+		}
+		.navbar{
+			display:inline-block;
+			position:absolute;	
+			top:13px;
+			right:10px;
+		}
+	}
+
+}
