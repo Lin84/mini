@@ -21,6 +21,11 @@ h1,h2,h3,h4,h5,h6,p,a,ul,li{
 		background-color:#f9f9f9;
 		padding-top:30px;
 	}
+	&_technologie-content{
+		background-color:#f9f9f9;
+		padding-top:30px;
+		text-align:center;
+	}
 	&_footer{
 		background-color:#000000;
 		padding-bottom:0px;
@@ -37,7 +42,7 @@ h1,h2,h3,h4,h5,h6,p,a,ul,li{
 	max-width:1500px;
 	padding:0px;
 	margin:0 auto;
-
+	position:relative;
 }
 .list{
 	text-align:center;
@@ -55,6 +60,11 @@ h1,h2,h3,h4,h5,h6,p,a,ul,li{
 @font-face{
 	font-family:"ProximaNova-regular";
 	src: url("../font/Proxima Nova Font Free/Mark Simonson - Proxima Nova Alt Regular.otf")
+}
+
+@font-face {
+	font-family: "MINISerif";
+	src: url("../font/MINI Serif-Regular.ttf"); 
 }
 
 .input:focus, textarea:focus{

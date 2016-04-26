@@ -1,0 +1,81 @@
+.table{
+	div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p,form,i{
+		// border:1px dashed red;
+	}
+
+	text-align:center;
+	&__title{
+		font-family: "MINISerif";
+		color: #000000;
+		font-size: 30px; 
+		font-weight: 400;
+		text-align: left;
+		vertical-align:middle;
+		margin-bottom:40px;
+
+		max-width:296px;
+	}
+	&__paragraph{
+		font-family: "MINISerif";
+		color: #000000;
+		font-size: 20px; 
+		font-weight: 400;
+		line-height: 28px;
+		text-align: left;
+		max-width:316px;
+	}
+	&__navigation{
+		font-family: "ProximaNova-bold";
+		color: #000000;
+		font-size: 13px;
+		font-weight: 700;
+		text-align: center;
+		display:inline-block;
+		width:100px;
+		cursor: pointer;
+		&_active{
+			color:#00a7ac;
+		}
+	}
+
+	&__cell-container{
+		width:90%;
+		display:flex;
+		margin: 0 auto;
+
+
+		&_vykon{
+			// display:none;
+		}
+		&_bezpecnost{
+			display:none;
+		}
+		&_prostor{
+			display:none;
+		}
+	}
+	&__cell{
+		width:474px;
+		margin-right:35px;
+		background-color:#f1f1f1;
+		padding-bottom:71px;
+		&_last{
+			margin-right:0px;
+		}
+	}
+	&__navigation-wrapper{
+		margin-bottom:69px;	
+	}
+	&__image{
+		width:100%;
+		// float:right;	
+		margin-bottom:50px;
+	}
+	&__text-wrapper{
+		padding-left:30px;
+	}
+	&__slider{
+		height:626px;
+	}
+
+}

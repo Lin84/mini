@@ -40,7 +40,7 @@
 		div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p,form,i{
 			// border: 1px dashed red;
 		}
-		border-bottom:none;	
+		border-bottom:none;
 		.navbar-header{
 			.navbar-toggle{
 				display:none;
@@ -49,7 +49,7 @@
 		.navbar{
 			display:inline-block;
 			position:absolute;	
-			top:13px;
+			top:0px;
 			right:10px;
 		}
 	}
