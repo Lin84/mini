@@ -35,6 +35,12 @@ h1,h2,h3,h4,h5,h6,p,a,ul,li{
 		padding-bottom:30px;
 		text-align:center;
 	}
+	&_posedli-content{
+		padding:0;
+		&_others{
+			background-color:#f9f9f9;	
+		}
+	}
 }
 
 .wrapper{
@@ -43,6 +49,10 @@ h1,h2,h3,h4,h5,h6,p,a,ul,li{
 	padding:0px;
 	margin:0 auto;
 	position:relative;
+
+	&_posedli-content{
+		text-align:center;
+	}
 }
 .list{
 	text-align:center;

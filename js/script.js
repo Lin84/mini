@@ -78,7 +78,7 @@ $(document).ready(function(){
 		if (ww>=784) {mySwiper2.params.slidesPerView = 3;}		
 		// if (ww>=1024) {mySwiper2.params.slidesPerView = 3;}
 	})	
-// -------------------------------------------------------------------------------------------------
+// ***table navigation of technologie *********************************************
 	$(".table__navigation_vykon").on("click",function(){
 		$(".table__navigation").removeClass("table__navigation_active");
 		$(".table__navigation_vykon").addClass("table__navigation_active");
@@ -92,6 +92,50 @@ $(document).ready(function(){
 		$(".table__navigation").removeClass("table__navigation_active");
 		$(".table__navigation_prostor").addClass("table__navigation_active");
 	})
+// *** show and hide detail  ************************************************
+	$(function(){
+		var scroll=$(document).scrollTop();
+		var headerHeight=$(".header").height();
+		$(window).scroll(function(){
+			// var scrolled=$(document).scrollTop();
+			// console.log("scroll: "+scroll);
+			// console.log("scrolled: "+scrolled);
+			// if(scrolled>900){
+			// 	$(".posedli-content__detail-container_first").removeClass("show-posedli");
+			// 	$(".posedli-content__detail-container_first").addClass("hide-posedli");
+			// }
+			// else{
+			// 	$(".posedli-content__detail-container_first").removeClass("hide-posedli");
+			// 	$(".posedli-content__detail-container_first").addClass("show-posedli");
+			// }
+			// if(scrolled>780){
+			// 	$(".posedli-content__detail-container_second").removeClass("hide-posedli");
+			// 	$(".posedli-content__detail-container_second").addClass("show-posedli");
+			// }
+			// else{
+			// 	$(".posedli-content__detail-container_second").removeClass("show-posedli");
+			// 	$(".posedli-content__detail-container_second").addClass("hide-posedli");
+			// }
 
+			// if(scrolled>1200){
+			// 	$(".posedli-content__detail-container_third").removeClass("hide-posedli");
+			// 	$(".posedli-content__detail-container_third").addClass("show-posedli");
+			// }
+			// else{
+			// 	$(".posedli-content__detail-container_third").removeClass("show-posedli");
+			// 	$(".posedli-content__detail-container_third").addClass("hide-posedli");
+			// }
 
+			scroll=$(document).scrollTop();
+		})
+	})
+// ****************************************************************
+		var controller = new ScrollMagic.Controller();
+		// build scene
+		var scene = new ScrollMagic.Scene({
+			triggerElement: "#trigger1"
+		})
+		.setTween("#animate1", 0.5, {scale: 2.5}) // trigger a TweenMax.to tween
+		.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+		.addTo(controller);
 })

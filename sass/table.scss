@@ -2,27 +2,57 @@
 	div,ul,li,a,img,section,nav,button,span,h1,h2,h3,p,form,i{
 		// border:1px dashed red;
 	}
-
 	text-align:center;
+	&__container{
+		height:626px;
+		&_posedli{
+			height:auto;
+			padding-bottom:50px;
+		}
+	}
 	&__title{
 		font-family: "MINISerif";
 		color: #000000;
-		font-size: 30px; 
-		font-weight: 400;
-		text-align: left;
-		vertical-align:middle;
-		margin-bottom:40px;
+		&_posedli{
+			font-size: 32px;
+			font-weight: 700;
+			padding-bottom:80px;
+			padding-top:80px;
+		}
+		&_cell-technologie{
+			font-size: 30px;
+			font-weight: 400; 
+			vertical-align:middle;
+			margin-bottom:40px;
+			max-width:306px;
+			text-align:left;
+		}
+		&_cell-posedli{
+			font-size: 25px; 
+			font-weight: 400;
+			text-align:left;
+			margin-bottom:24px;	
 
-		max-width:296px;
+		}
 	}
+
+
 	&__paragraph{
-		font-family: "MINISerif";
 		color: #000000;
+		font-family: "MINISerif";
 		font-size: 20px; 
 		font-weight: 400;
 		line-height: 28px;
-		text-align: left;
 		max-width:316px;
+		text-align: left;
+
+		&_posedli{
+			font-size: 16px; 
+			line-height: 26px; 
+			text-align: left;
+			max-width:400px;
+			margin-bottom:87px;
+		}
 	}
 	&__navigation{
 		font-family: "ProximaNova-bold";
@@ -42,8 +72,6 @@
 		width:90%;
 		display:flex;
 		margin: 0 auto;
-
-
 		&_vykon{
 			// display:none;
 		}
@@ -53,12 +81,28 @@
 		&_prostor{
 			display:none;
 		}
+		&_white{
+			width:70%;
+		}
+		&_maBot{
+			padding-bottom:39px;
+		}
 	}
 	&__cell{
 		width:474px;
 		margin-right:35px;
 		background-color:#f1f1f1;
 		padding-bottom:71px;
+
+		&_posedli{
+			margin-right:39px;
+			padding-bottom:0px;
+			width:auto;
+			background-color:#f9f9f9;
+		}
+		&_white{
+			background-color:#ffffff;
+		}
 		&_last{
 			margin-right:0px;
 		}
@@ -70,12 +114,20 @@
 		width:100%;
 		// float:right;	
 		margin-bottom:50px;
+
+		&_posedli{
+			max-width:345px;
+			max-height:345px;
+			margin-bottom:0px;
+		}
 	}
 	&__text-wrapper{
 		padding-left:30px;
+		&_posedli{
+			padding-left:0px;
+		}
 	}
-	&__slider{
-		height:626px;
-	}
+
+
 
 }

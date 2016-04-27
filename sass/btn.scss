@@ -1,19 +1,22 @@
 .btn{
 
-	text-align:center;
-	border:none;
-	-webkit-user-select:none;
 	-moz-user-select:none;
 	-ms-user-select:none;
+	-webkit-user-select:none;
 	background-color:none;
-	outline:none;
+	border:none;
 	cursor:pointer;
-	padding:0;
 	display:inline-block;
-	text-decoration:none;
-	font-size: 13px;
 	font-family: "ProximaNova-bold";
+	font-size: 13px;
+	outline:none;
+	padding:0;
+	text-align:center;
+	text-decoration:none;
 	&:hover{
+		color:#000000;
+		border:1px solid #000000;
+		background-color:#ffffff;
 		.btn__link{
 			color:#ffffff;
 		}
@@ -56,37 +59,52 @@
 		width:49.3%;
 	}
 	&_green{
+		background-color:#00a7ac;
+		border:1px solid rgba(0,0,0,0);
+		color:#ffffff;
 		display:inline-block;
-		width:47%;
 		height:45px;
 		line-height: 45px;
-		color:#ffffff;
-		background-color:#00a7ac;
-		margin-right:11px;
-		border:1px solid rgba(0,0,0,0);
 		margin-bottom:40px;
-
-		font-family: "ProximaNova-bold";
-		font-size: 12.99px;
+		margin-right:11px;
+		width:47%;
 		font-weight: 700;
 		transform: scaleY(1.0008);
 		max-width:225px;
+
+		font-size:16px;
 	}
-	&_green:hover{
-		color:#000000;
-		border:1px solid #000000;
-		background-color:#ffffff;
-	}
-	&_white{
+	&_orange{
+		background-color:#00a7ac;
+		border:1px solid rgba(0,0,0,0);
+		color:#ffffff;
 		display:inline-block;
-		width:47%;
 		height:45px;
 		line-height: 45px;
-		color:#000000;
-		border:1px solid #000000;
-		margin-bottom:40px;
+		width:47%;
 
-		font-family: "ProximaNova-bold";
+		font-weight: 700;
+		transform: scaleY(1.0008);
+		max-width:225px;
+
+		font-size:16px;
+
+		background-color:  #ed9300;
+
+	}
+	&_last-posedli{
+		margin-right:0px;
+		margin-bottom:90px;
+	}
+	&_white{
+		border:1px solid #000000;
+		color:#000000;
+		display:inline-block;
+		height:45px;
+		line-height: 45px;
+		margin-bottom:40px;
+		width:47%;
+
 		font-size: 13px;
 		font-weight: 700;
 		max-width:225px;
@@ -108,6 +126,7 @@
 		padding-left:8px;
 		padding-right:8px;
 		vertical-align: middle;
+		cursor:pointer;
 	}
 	&_center{
 		margin: 35px auto;
@@ -166,10 +185,7 @@
 			border:1px solid #00a7ac;
 		}
 		&_zkusebna-jizda:hover{
-			background-color:#000000;
-			.btn__link_zkusebna{
-				color:#ffffff;
-			}	
+			border:1px solid #000000;
 		}
 		&__link{
 			&_zkusebna{
