@@ -103,6 +103,17 @@ $(".btn__link_yemi").on("click", function(e) {
     	$("html, body").stop().animate({ scrollTop: $(msg).offset().top - 120 }, 500); 
     }
 });
+
+$(".btn__link_dalsi").on("click", function(e) {
+    var msg = $(this).attr("href");
+    var menu = $(".header");
+    var scrolled=$(document).scrollTop();
+    if(scrolled <1397){
+	    $("html, body").stop().animate({ scrollTop: $(msg).offset().top }, 500); 
+    }else{
+    	$("html, body").stop().animate({ scrollTop: $(msg).offset().top - 110 }, 500); 
+    }
+});
 // *** POSEDLI VICE BUTTON *****************************************************
 var vice=false
 	$(".btn_last-posedli").on("click",function(){
