@@ -209,6 +209,9 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
       max-width: 80px; }
     .btn__link_dalsi {
       max-width: 120px; }
+    .btn__link_hight-light {
+      font-family: "ProximaNova-bold" !important;
+      color: #000000; }
   .btn__icon {
     color: #000000;
     line-height: 35px;

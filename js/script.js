@@ -1,15 +1,15 @@
 $(document).ready(function(){
-// ***remove default setting automoving of top after click on button   *********
-	$(".btn").on("click",function(){
-		event.preventDefault();
+// *** remove default setting automoving of top after click on button **********
+	$("a").on("click",function(){
+		// event.preventDefault();
 	})
 
-// --navbar toggle *************************************************************	
+// *** navbar toggle ***********************************************************	
 	$(".navbar-toggle").on("click",function(){
 		$(".navHeaderCollapse").slideToggle();
 	})
 
-// --to fix problem with hiding problem navbar-collapse after ******************
+// ** to fix problem with hiding problem navbar-collapse after *****************
 	$(window).resize(function() {
 	    if ($(window).width() >784) {
 	        $(".navbar").show();
@@ -18,12 +18,12 @@ $(document).ready(function(){
 	        $(".navbar").hide();
 	    }
 	});
-// *** logo click to scroll top of website ************************************
+// *** logo click to scroll top of website *************************************
 	$(".logo").on("click",function(){
 		$("body,html").stop().animate({scrollTop:0})
 	})
 
-// ***smooth autohiding navbar ************************************************
+// *** smooth autohiding navbar ************************************************
 	$(function(){
 		var scroll=$(document).scrollTop();
 		var headerHeight=$(".header").height();
@@ -39,7 +39,7 @@ $(document).ready(function(){
 		})
 	})
 
-// ***slider in "TECHNOLOGIE"***************************************************
+// *** slider in "technologie-content" *****************************************
 	// var width = $(window).width();	
 	var ww = $(window).width()
 		var a; 
@@ -69,54 +69,71 @@ $(document).ready(function(){
 	// 	if (ww>=784) {mySwiper2.params.slidesPerView = 3;}		
 	// })	
 
-// ***table navigation of technologie ******************************************
+// *** table navigation of technologie *****************************************
 	$(".table__navigation").on("click",function(){
 		$(".table__navigation").removeClass("table__navigation_active");
 		$(this).addClass("table__navigation_active");
 	})
 
-// *** click on navbar will animate to chose menu section **********************
-$(".btn__link_petr").on("click", function(e) {
-    var msg = $(this).attr("href");
-    var menu = $(".header");
-    $("html, body").stop().animate({ scrollTop:0}, 500); 
-});
+// *** btn__link navigation posedli hight-light active section *****************
+	$(".btn__link_posedli").on("click",function(){
+		console.log("hovnodva");
+	    $(".btn__link_posedli").removeClass("btn__link_hight-light");
+	    $(this).addClass("btn__link_hight-light");
+	})
 
-$(".btn__link_terezie").on("click", function(e) {
-    var msg = $(this).attr("href");
-    var menu = $(".header");
-    var scrolled=$(document).scrollTop();
-    if(scrolled <669){
-	    $("html, body").stop().animate({ scrollTop: $(msg).offset().top }, 500); 
-    }else{
-    	$("html, body").stop().animate({ scrollTop: $(msg).offset().top - 120 }, 500); 
-    }
-});
+// *** click on posedli will  animate to chosen person section *****************
+	$(".btn__link_petr").on("click", function(e) {
+	    var msg = $(this).attr("href");
+	    var menu = $(".header");
+	    $("html, body").stop().animate({ scrollTop:0}, 500); 
+	    event.preventDefault();
+	});
+	// *** btn__link_terezie ************************
+	$(".btn__link_terezie").on("click", function(e) {
+		event.preventDefault();
+	    var msg = $(this).attr("href");
+	    var menu = $(".header");
+	    var scrolled=$(document).scrollTop();
+	    if(scrolled <669){
+		    $("html, body").stop().animate({ scrollTop: $(msg).offset().top }, 500); 
+		    $(".btn__link").removeClass("btn__link_hight-light");
+		    $(this).addClass("btn__link_hight-light");
+	    }else{
+	    	$("html, body").stop().animate({ scrollTop: $(msg).offset().top - 110 }, 500); 
+	    }
+	});
+	// *** btn__link_yemi ************************
+	$(".btn__link_yemi").on("click", function(e) {
+		event.preventDefault();
+	    var msg = $(this).attr("href");
+	    var menu = $(".header");
+	    var scrolled=$(document).scrollTop();
+	    if(scrolled <1038){
+		    $("html, body").stop().animate({ scrollTop: $(msg).offset().top }, 500); 
+		    	    $(".btn__link").removeClass("btn__link_hight-light");
+		    $(this).addClass("btn__link_hight-light");
 
-$(".btn__link_yemi").on("click", function(e) {
-    var msg = $(this).attr("href");
-    var menu = $(".header");
-    var scrolled=$(document).scrollTop();
-    if(scrolled <1038){
-	    $("html, body").stop().animate({ scrollTop: $(msg).offset().top }, 500); 
-    }else{
-    	$("html, body").stop().animate({ scrollTop: $(msg).offset().top - 120 }, 500); 
-    }
-});
-
-$(".btn__link_dalsi").on("click", function(e) {
-    var msg = $(this).attr("href");
-    var menu = $(".header");
-    var scrolled=$(document).scrollTop();
-    if(scrolled <1397){
-	    $("html, body").stop().animate({ scrollTop: $(msg).offset().top }, 500); 
-    }else{
-    	$("html, body").stop().animate({ scrollTop: $(msg).offset().top - 110 }, 500); 
-    }
-});
+	    }else{
+	    	$("html, body").stop().animate({ scrollTop: $(msg).offset().top - 110 }, 500); 
+	    }
+	});
+	// *** btn__link_dalsi ************************
+	$(".btn__link_dalsi").on("click", function(e) {
+		event.preventDefault();
+	    var msg = $(this).attr("href");
+	    var menu = $(".header");
+	    var scrolled=$(document).scrollTop();
+	    if(scrolled <1397){
+		    $("html, body").stop().animate({ scrollTop: $(msg).offset().top }, 500); 
+	    }else{
+	    	$("html, body").stop().animate({ scrollTop: $(msg).offset().top - 110 }, 500); 
+	    }
+	});
 // *** POSEDLI VICE BUTTON *****************************************************
-var vice=false
+	var vice=false
 	$(".btn_last-posedli").on("click",function(){
+		event.preventDefault();
 	  	if(!vice){
 		  	$(".posedli-content__vice_second").slideDown();
 		  	$(".btn_last-posedli").text("MÉNĚ");
@@ -125,15 +142,16 @@ var vice=false
 		  	$(".posedli-content__vice_second").slideUp();
 		  	$(".btn_last-posedli").text("VÍCE");
 		  	vice=false;}
-  })
-// *** show and hide detail  ************************************************
+	  })
+
+// *** show and hide detail  ***************************************************
 	$(function(){
 		var scroll=$(document).scrollTop();
 		var headerHeight=$(".header").height();
 		$(window).scroll(function(){
 			var scrolled=$(document).scrollTop();
-			console.log("scroll: "+scroll);
-			console.log("scrolled: "+scrolled);
+			// console.log("scroll: "+scroll);
+			// console.log("scrolled: "+scrolled);
 			// if(scrolled>600&&scrolled<670){
 			// 	$(".posedli-content__detail-container_second").css("tranform","scale(1.7)");
 				
@@ -151,7 +169,8 @@ var vice=false
 			// scroll=$(document).scrollTop();
 		})
 	})
-  // ********SCROLL MAGIC **********************************************************
+
+// ********SCROLL MAGIC ********************************************************
   // var controller= new ScrollMagic.Controller();
   // var scenel = new ScrollMagic.Scene({
   // 	triggerElement:"#trigger1",
@@ -191,6 +210,5 @@ var vice=false
   // .addIndicators({name:"1 - 0 duration"})
   // .addTo(controller);
 
-
-// **************************************************************************
+// *****************************************************************************
 })
