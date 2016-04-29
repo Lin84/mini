@@ -3,6 +3,7 @@
 		// border:1px dashed red;
 	}
 	&_top{
+		
 		background-color:#ffffff;
 	}
 	&__detail-navigation{
@@ -10,6 +11,19 @@
 		width:100%;
 		padding-top:65px;
 		background-color:#ebebeb;
+
+		position:relative;
+	}
+	&__list{
+		margin:7px auto 0 auto;
+		text-align:left;
+		width:100%;
+		background-color:#f9f9f9;
+		max-width:1920px;
+	}
+	&__item{
+		// width:125px;
+		display:inline-block;
 	}
 	&__title{
 		&_detail{
@@ -18,7 +32,6 @@
 			font-weight: 700;
 			text-align:left;
 			margin-bottom:10px;
-			// margin-top:500px;
 		}
 	}
 	&_grey{
@@ -34,81 +47,77 @@
 		font-weight: 400;
 		line-height: 26px; 
 		text-align:left;
-
-
 		&_last{
 
 		}
-
 		&_detail{
-			// color:rgba(255, 255, 255, 0.3);
 			color:#ffffff;
 			font-size: 18px; 
 			line-height: 28px;
-			margin-bottom:39px;
+			margin-bottom:19px;
 			text-align:left;
 		}
-
 	}
 	&__detail-container{
-		width:100%;
-		// height:500px;
-		// height:793px;
-		height:400px;
-
-		background-size:cover;
 		background-position:center center;
+		background-repeat:no-repeat;
+		background-size:100%;
+		// height:359px;
 		margin-bottom:10px;
-		
-		text-align:left;
-
 		position:relative;
+		text-align:left;
+		overflow: hidden;
+		height:659px;
+		transition:all 1s;
+
+		// position:absolute;
+		// width:100%;
 		&_first{
 			background-image:url("../img/detail-01.png");
-			height:500px;
-			background-position:center 500px;
 		}
 		&_second{
 			background-image:url("../img/detail-02.png");
-			// height:400px;
-
+			height:359px;
 		}
 		&_third{
 			background-image:url("../img/detail-03.png");
-			// height:400px;
+			height:359px;
 			margin-bottom:0px;
 		}
 	}
 	&__detail-text{
 		width:455px;
-		// margin-left:150px;
-		// padding-top:450px;
-		// display:none;
-		top:49%;
-		left:15%;
+		top:400px;
+		left:13%;
 		position:absolute;
-		overflow:hidden;
-		&_hide{
-			// display:none;
-		}
 	}
-
 }
-// .hide-posedli{
-// 	transition: height 1s;
-// 	height:453px;
-// 	.posedli-content__detail-text{
-// 		display:none;
-// 	}
-// }
-// .show-posedli{
-// 	transition: height 1s;
-// 	height:793px;
-// 	.posedli-content__detail-text{
-// 		display:block;
-// 	}	
+
+
+// .show{
+	
+// 	z-index:999999;
+// 	position:fixed;
+// 	height:100%;
+// 	top:0;
+// 	left:0;
+// 	right:0;
+// 	// bottom:0;
+// 	transition:all 0.5s;
 // }
 
-.hide{
-	display:none;
+#animate1{
+	&_second{
+		background-image:url("../img/detail-02.png");
+	}
 }
+
+#hovno{
+	height:359px;
+	margin-bottom:10px;
+}
+
+
+
+
+

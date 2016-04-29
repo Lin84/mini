@@ -23,11 +23,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.js"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.js"></script>
-
-	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-
-	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-
+<!-- ----------------------- -->
+	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/ScrollMagic.js"></script>
+	<script type="text/javascript" src="js/animation.gsap.js"></script>
+	<script type="text/javascript" src="js/debug.addIndicators.js"></script>
+<!-- ----------------------- -->
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
@@ -52,44 +53,51 @@
 						<li class="btn btn_collapse btn_social"><i class="fa fa-facebook btn__icon btn__icon_facebook" aria-hidden="true"></i></li>
 						<li class="btn btn_collapse btn_social"><i class="fa fa-instagram btn__icon btn__icon_instagram" aria-hidden="true"></i></li>
 					</ul>
+
 				</nav>
 			</div>
 		</div>
-	</header> <!-- .header -->
+		<ul class="posedli-content__list">
+			<li class="posedli-content__item "><a class="btn btn_collapse btn__link btn__link_posedli btn__link_terezie" href="#terezie">TEREZIE KOVALOVÁ</a></li>
+			<li class="posedli-content__item"><a class="btn btn_collapse btn__link btn__link_posedli btn__link_yemi" href="#yemi">YEMI AD</a></li>
+			<li class="posedli-content__item"><a class=" btn btn_collapse btn__link btn__link_posedli btn__link_petr" href="#petr">PETR HORNÍČEK</a></li>
+			<li class="posedli-content__item"><a class=" btn btn_collapse btn__link  btn__link_posedli btn__link_dalsi" href="#ostatni-posedli">DALŠÍ POSEDLÍ</a></li>
+		</ul>
+	</header>  <!-- .header -->
 <!----------------------------------------- -->
 	<section class="posedli-content posedli-content_top">
 		<div class="container container_posedli-content">
-			<!-- <div class="wrapper wrapper_posedli-content"> -->
-				<div class="posedli-content__detail-navigation">
-					
+			<div class="posedli-content posedli-content__detail-container posedli-content__detail-container_first" id="petr">
+				<div class="posedli-content__detail-text ">
+					<h1 class="posedli-content__title_detail">PETR HORNÍČEK</h1>
+					<p class="posedli-content__paragraph_detail">TwinPower Turbo engines, eight speeds and three distinct driving models all contribute to the enhanced performance of the new MINI Clubman. Hear from Manager Process Powertrain on the power and go-kart feeling of the car.</p>
+					<a href="#" class="btn btn_orange">DETAIL</a>
 				</div>
-				<div class="posedli-content posedli-content__detail-container posedli-content__detail-container_first show-posedli">
-					<div class="posedli-content__detail-text ">
-						<h1 class="posedli-content__title_detail">PETR HORNÍČEK</h1>
-						<p class="posedli-content__paragraph_detail">TwinPower Turbo engines, eight speeds and three distinct driving models all contribute to the enhanced performance of the new MINI Clubman. Hear from Manager Process Powertrain on the power and go-kart feeling of the car.</p>
-						<a href="#" class="btn btn_orange">DETAIL</a>
-					</div>
+			</div>
+
+			
+			<div class="posedli-content posedli-content__detail-container posedli-content__detail-container_second" id="terezie">
+			<div id="trigger1"></div>
+				<div class="posedli-content__detail-text">
+					<h1 class="posedli-content__title_detail">TEREZIE KOVALOVÁ</h1>
+					<p class="posedli-content__paragraph_detail">TwinPower Turbo engines, eight speeds and three distinct driving models all contribute to the enhanced performance of the new MINI Clubman. Hear from Manager Process Powertrain on the power and go-kart feeling of the car.</p>
+					<a href="#" class="btn btn_orange">DETAIL</a>
 				</div>
-				<div id="trigger1" class="spacer s0"></div>
-				<div id="animate1" class="posedli-content posedli-content__detail-container posedli-content__detail-container_second box2 skin">
-					<div class="posedli-content__detail-text hide-posedli hide">
-						<h1 class="posedli-content__title_detail">PETR HORNÍČEK</h1>
-						<p class="posedli-content__paragraph_detail">TwinPower Turbo engines, eight speeds and three distinct driving models all contribute to the enhanced performance of the new MINI Clubman. Hear from Manager Process Powertrain on the power and go-kart feeling of the car.</p>
-						<a href="#" class="btn btn_orange">DETAIL</a>
-					</div>
+			</div>
+
+			<div class="posedli-content posedli-content__detail-container posedli-content__detail-container_third" id="yemi">
+			<div id="trigger2"></div>
+				<div class="posedli-content__detail-text">
+					<h1 class="posedli-content__title_detail">YEMI AD</h1>
+					<p class="posedli-content__paragraph_detail">TwinPower Turbo engines, eight speeds and three distinct driving models all contribute to the enhanced performance of the new MINI Clubman. Hear from Manager Process Powertrain on the power and go-kart feeling of the car.</p>
+					<a href="#" class="btn btn_orange">DETAIL</a>
 				</div>
-				<div class="posedli-content posedli-content__detail-container posedli-content__detail-container_third">
-					<div class="posedli-content__detail-text hide-posedli hide">
-						<h1 class="posedli-content__title_detail">PETR HORNÍČEK</h1>
-						<p class="posedli-content__paragraph_detail">TwinPower Turbo engines, eight speeds and three distinct driving models all contribute to the enhanced performance of the new MINI Clubman. Hear from Manager Process Powertrain on the power and go-kart feeling of the car.</p>
-						<a href="#" class="btn btn_orange">DETAIL</a>
-					</div>
-				</div>
-			<!-- </div> -->
+			</div>
 		</div>
-	</section> <!-- .posedli-content posedli-content_top -->
+	</section> 
+
 <!----------------------------------------- -->
-	<section class="posedli-content posedli-content_grey">
+	<section class="posedli-content posedli-content_grey" id="ostatni-posedli">
 		<div class="container container_posedli-content container_posedli-content_others">
 			<div class="wrapper wrapper_posedli-content">
 				<div class="table">
@@ -123,25 +131,25 @@
 						</ul>
 						<ul class="table__cell-container table__cell-container_posedli">
 							<li class="table__cell table__cell_grey table__cell_posedli">
-								<img class="table__image"src="img/kamura.png">
+								<img class="table__image"src="img/leo.png">
 								<div class="table__text-wrapper table__text-wrapper_posedli">
-									<h1 class="table__title table__title_cell-posedli">KAMURA</h1>
+									<h1 class="table__title table__title_cell-posedli">LEO MACENAUER</h1>
 									<p class="table__paragraph table__paragraph_posedli">TwinPower Turbo engines, eight speeds and three distinct 
 									driving models all contribute to the enhanced performance of the new MINI Clubman.</p>
 								</div>
 							</li>
 							<li class="table__cell table__cell_grey table__cell_posedli">
-								<img class="table__image"src="img/petr.png">
+								<img class="table__image"src="img/anna.png">
 								<div class="table__text-wrapper table__text-wrapper_posedli">
-									<h1 class="table__title table__title_cell-posedli">PETR MÁRA</h1>
+									<h1 class="table__title table__title_cell-posedli">ANNA MAREŠOVÁ</h1>
 									<p class="table__paragraph table__paragraph_posedli">TwinPower Turbo engines, eight speeds and three distinct 
 									driving models all contribute to the enhanced performance of the new MINI Clubman.</p>
 								</div>	
 							</li>
 							<li class="table__cell table__cell_grey table__cell_posedli table__cell_last">
-								<img class="table__image"src="img/bj.png">
+								<img class="table__image"src="img/ondrash.png">
 								<div class="table__text-wrapper table__text-wrapper_posedli">
-									<h1 class="table__title table__title_cell-posedli">BJUKITCHEN</h1>
+									<h1 class="table__title table__title_cell-posedli">ONDRASH</h1>
 									<p class="table__paragraph table__paragraph_posedli">TwinPower Turbo engines, eight speeds and three distinct 
 									driving models all contribute to the enhanced performance of the new MINI Clubman.</p>
 								</div>
@@ -151,13 +159,13 @@
 				</div>
 			</div>
 		</div>
-	</section>  --><!-- .posedli-content posedli-content_grey
+	</section>  
 
 <!----------------------------------------- -->
 	<section class="posedli-content posedli-content_white">
 		<div class="container container_posedli-content">
 			<div class="wrapper wrapper_posedli-content">
-				<div class="table">
+				<div class="table posedli-content__vice_first">
 					<div class="table__container table__container_posedli">
 						<h1 class="table__title_posedli">#POSEDLÍ</h1>
 						<ul class="table__cell-container table__cell-container_white table__cell-container_maBot">
@@ -184,10 +192,36 @@
 						</ul>
 					</div>
 				</div>
+				<div class="table posedli-content__vice_second hide">
+					<div class="table__container table__container_posedli">
+						<ul class="table__cell-container table__cell-container_white table__cell-container_maBot">
+							<li class="table__cell table__cell_white table__cell_posedli">
+								<img class="table__image table__image_posedli"src="img/snimek-28.jpg">
+							</li>
+							<li class="table__cell table__cell_white table__cell_posedli">
+								<img class="table__image table__image_posedli"src="img/snimek-20.jpg">
+							</li>
+							<li class="table__cell table__cell_white table__cell_posedli table__cell_last">
+								<img class="table__image table__image_posedli"src="img/snimek-00.jpg">
+							</li>
+						</ul>
+						<ul class="table__cell-container table__cell-container_white ">
+							<li class="table__cell table__cell_white table__cell_posedli">
+								<img class="table__image table__image_posedli"src="img/snimek-53.jpg">
+							</li>
+							<li class="table__cell table__cell_white table__cell_posedli">
+								<img class="table__image table__image_posedli"src="img/snimek-10.jpg">
+							</li>
+							<li class="table__cell table__cell_white table__cell_posedli table__cell_last">
+								<img class="table__image table__image_posedli"src="img/snimek-50.jpg">
+							</li>
+						</ul>
+					</div>
+				</div>
 				<a href="#" class="btn btn_green btn_last-posedli">VÍCE</a>
 			</div>
 		</div>
-	</section> --><!-- .posedli-content posedli-content_white
+	</section> 
 
 <!----------------------------------------- -->
 	<footer class="footer">

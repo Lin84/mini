@@ -7,9 +7,17 @@ body,html{
 	min-width:320px;
 	padding:0;
 }
+
 h1,h2,h3,h4,h5,h6,p,a,ul,li{
 	text-decoration:none;
 	text-align: center;
+}
+
+.hide{
+	display:none;
+}
+.show{
+	display:inline-block;
 }
 .container{
 	min-width:300px;
@@ -17,6 +25,7 @@ h1,h2,h3,h4,h5,h6,p,a,ul,li{
 	padding:10px;
 	margin:0 auto;
 	background-color:#ffffff;
+
 	&_mini-content{
 		background-color:#f9f9f9;
 		padding-top:30px;
@@ -37,6 +46,10 @@ h1,h2,h3,h4,h5,h6,p,a,ul,li{
 	}
 	&_posedli-content{
 		padding:0;
+		overflow: hidden;
+		// padding-top:110px;
+
+		// position:absolute;
 		&_others{
 			background-color:#f9f9f9;	
 		}

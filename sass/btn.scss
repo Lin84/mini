@@ -19,6 +19,8 @@
 		background-color:#ffffff;
 		.btn__link{
 			color:#ffffff;
+
+
 		}
 		.btn__icon{
 			color:#ffffff;
@@ -48,7 +50,6 @@
 		line-height:35px;
 		margin-top:5px;
 		border:1px solid #000000;
-		
 	}
 	&_collapse:hover{
 		background-color: #00a7ac;
@@ -95,6 +96,7 @@
 	&_last-posedli{
 		margin-right:0px;
 		margin-bottom:90px;
+		font-family: "ProximaNova-bold" !important;
 	}
 	&_white{
 		border:1px solid #000000;
@@ -116,6 +118,18 @@
 	}
 	&__link{
 		color:#9a9a9a;
+		&_petr{
+			max-width:130px;
+		}
+		&_terezie{
+			max-width:150px;
+		}
+		&_yemi{
+			max-width:80px;
+		}
+		&_dalsi{
+			max-width:120px;
+		}
 	}
 
 	&__icon{
