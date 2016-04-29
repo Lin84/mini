@@ -17,6 +17,9 @@
 		color:#000000;
 		border:1px solid #000000;
 		background-color:#ffffff;
+		.btn_header{
+			border:1px solid rgba(0,0,0,0);
+		}
 		.btn__link{
 			color:#ffffff;
 
@@ -60,37 +63,33 @@
 		width:49.3%;
 	}
 	&_green{
+
 		background-color:#00a7ac;
 		border:1px solid rgba(0,0,0,0);
 		color:#ffffff;
 		display:inline-block;
+		font-size:16px;
+		font-weight: 700;
 		height:45px;
 		line-height: 45px;
 		margin-bottom:40px;
 		margin-right:11px;
-		width:47%;
-		font-weight: 700;
-		transform: scaleY(1.0008);
 		max-width:225px;
-
-		font-size:16px;
+		transform: scaleY(1.0008);
+		width:47%;
 	}
 	&_orange{
-		background-color:#00a7ac;
+		background-color:#ed9300;
 		border:1px solid rgba(0,0,0,0);
 		color:#ffffff;
 		display:inline-block;
+		font-size:16px;
+		font-weight: 700;
 		height:45px;
 		line-height: 45px;
-		width:47%;
-
-		font-weight: 700;
-		transform: scaleY(1.0008);
 		max-width:225px;
-
-		font-size:16px;
-
-		background-color:  #ed9300;
+		transform: scaleY(1.0008);
+		width:47%;
 
 	}
 	&_last-posedli{

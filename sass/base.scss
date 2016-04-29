@@ -25,7 +25,7 @@ h1,h2,h3,h4,h5,h6,p,a,ul,li{
 	padding:10px;
 	margin:0 auto;
 	background-color:#ffffff;
-
+	transition: all 0.3s ease-in-out;
 	&_mini-content{
 		background-color:#f9f9f9;
 		padding-top:30px;
@@ -53,6 +53,9 @@ h1,h2,h3,h4,h5,h6,p,a,ul,li{
 		&_others{
 			background-color:#f9f9f9;	
 		}
+	}
+	&_noPaddingTop{
+		padding:0px 10px 0px 10px;
 	}
 }
 

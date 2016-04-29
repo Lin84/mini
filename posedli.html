@@ -9,6 +9,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -32,9 +34,10 @@
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
+<!-- --- header --------------------------- -->
 	<header class="header">
-		<div class="container container_technologie">
-			<div class="wrapper wrapper_technologie">
+		<div class="container container_header">
+			<div class="wrapper wrapper_header" id="navbar">
 				<div class="navbar-header">
 					<img class="logo"src="img/logo.png">
 					<button class ="navbar-toggle btn" data-toggle="navbar" data-target="navHeaderCollapse" aria-expaned="false">
@@ -46,27 +49,41 @@
 				</div>
 				<nav class="navbar navHeaderCollapse">
 					<ul>
-						<li class="btn btn_collapse btn_posedli "><a class="btn__link btn__link_hight-light" href="posedli.html">POSEDLÍ</a></li>
-						<li class="btn btn_collapse btn_mini"><a class="btn__link" href="mini.html">MINI</a></li>
-						<li class="btn btn_collapse btn_technologie"><a class="btn__link"href="technologie.html">TECHNOLOGIE</a></li>
-						<li class="btn btn_collapse btn_zkusebna-jizda"><a class="btn__link btn__link_zkusebna"href="#">ZKUŠEBNÍ JÍZDA</a></li>
-						<li class="btn btn_collapse btn_social"><i class="fa fa-facebook btn__icon btn__icon_facebook" aria-hidden="true"></i></li>
-						<li class="btn btn_collapse btn_social"><i class="fa fa-instagram btn__icon btn__icon_instagram" aria-hidden="true"></i></li>
+						<a class="btn btn_collapse btn_posedli btn__link btn__link_hight-light" href="posedli.html">POSEDLÍ</a>
+						<a class="btn btn_collapse btn_mini btn_mini btn__link " href="mini.html">MINI</a>
+						<a class="btn btn_collapse btn_technologie btn__link"href="technologie.html">TECHNOLOGIE</a>
+						<a class="btn btn_collapse btn_zkusebna-jizda btn__link btn__link_zkusebna"href="#">ZKUŠEBNÍ JÍZDA</a>
+						<div class="btn btn_collapse btn_social"><i class="fa fa-facebook btn__icon btn__icon_facebook" aria-hidden="true"></i></div>
+						<div class="btn btn_collapse btn_social"><i class="fa fa-instagram btn__icon btn__icon_instagram" aria-hidden="true"></i></div>
 					</ul>
 
 				</nav>
 			</div>
+
 		</div>
-		<ul class="posedli-content__list">
-			<li class="posedli-content__item "><a class="btn btn_collapse btn__link btn__link_posedli btn__link_terezie" href="#terezie">TEREZIE KOVALOVÁ</a></li>
-			<li class="posedli-content__item"><a class="btn btn_collapse btn__link btn__link_posedli btn__link_yemi" href="#yemi">YEMI AD</a></li>
-			<li class="posedli-content__item"><a class=" btn btn_collapse btn__link btn__link_posedli btn__link_petr btn__link_hight-light" href="#petr">PETR HORNÍČEK</a></li>
-			<li class="posedli-content__item"><a class=" btn btn_collapse btn__link  btn__link_posedli btn__link_dalsi" href="#ostatni-posedli">DALŠÍ POSEDLÍ</a></li>
-		</ul>
+			<ul class="posedli-content__list posedli-content__list_noMarginTop">
+				<li class="posedli-content__item "><a class="btn btn_collapse btn__link btn__link_posedli btn__link_terezie" href="#terezie">TEREZIE KOVALOVÁ</a></li>
+				<li class="posedli-content__item"><a class="btn btn_collapse btn__link btn__link_posedli btn__link_yemi" href="#yemi">YEMI AD</a></li>
+				<li class="posedli-content__item"><a class=" btn btn_collapse btn__link btn__link_posedli btn__link_petr btn__link_hight-light" href="#petr">PETR HORNÍCEK</a></li>
+				<li class="posedli-content__item"><a class=" btn btn_collapse btn__link  btn__link_posedli btn__link_dalsi" href="#ostatni-posedli">DALŠÍ POSEDLÍ</a></li>
+			</ul>
 	</header>  <!-- .header -->
-<!----------------------------------------- -->
+
+<!-- -------------------------------------- -->
+<!-- 	<section class="posedli-content posedli-content__posedli-navigation">
+		<div class="container container_posedli-content">
+			<ul class="posedli-content__list posedli-content__list_noMarginTop">
+				<li class="posedli-content__item "><a class="btn btn_collapse btn__link btn__link_posedli btn__link_terezie" href="#terezie">TEREZIE KOVALOVÁ</a></li>
+				<li class="posedli-content__item"><a class="btn btn_collapse btn__link btn__link_posedli btn__link_yemi" href="#yemi">YEMI AD</a></li>
+				<li class="posedli-content__item"><a class=" btn btn_collapse btn__link btn__link_posedli btn__link_petr btn__link_hight-light" href="#petr">PETR HORNÍCEK</a></li>
+				<li class="posedli-content__item"><a class=" btn btn_collapse btn__link  btn__link_posedli btn__link_dalsi" href="#ostatni-posedli">DALŠÍ POSEDLÍ</a></li>
+			</ul>
+		</div>
+	</section> -->
+<!-- -------------------------------------- -->
 	<section class="posedli-content posedli-content_top">
 		<div class="container container_posedli-content">
+
 			<div class="posedli-content posedli-content__detail-container posedli-content__detail-container_first" id="petr">
 				<div class="posedli-content__detail-text ">
 					<h1 class="posedli-content__title_detail">PETR HORNÍČEK</h1>
@@ -76,23 +93,26 @@
 			</div>
 
 			
-			<div class="posedli-content posedli-content__detail-container posedli-content__detail-container_second" id="terezie">
-			<div id="trigger1"></div>
-				<div class="posedli-content__detail-text">
-					<h1 class="posedli-content__title_detail">TEREZIE KOVALOVÁ</h1>
-					<p class="posedli-content__paragraph_detail">TwinPower Turbo engines, eight speeds and three distinct driving models all contribute to the enhanced performance of the new MINI Clubman. Hear from Manager Process Powertrain on the power and go-kart feeling of the car.</p>
-					<a href="#" class="btn btn_orange">DETAIL</a>
+			<div class="posedli-content posedli-content__detail-container posedli-content__detail-container_second grow	" id="terezie">
+			<!-- <div id="trigger1"></div> -->
+				<div id="imageee"></div>
+				<div id="vrap">
+					<div class="posedli-content__detail-text">
+						<h1 class="posedli-content__title_detail">TEREZIE KOVALOVÁ</h1>
+						<p class="posedli-content__paragraph_detail">TwinPower Turbo engines, eight speeds and three distinct driving models all contribute to the enhanced performance of the new MINI Clubman. Hear from Manager Process Powertrain on the power and go-kart feeling of the car.</p>
+						<a href="#" class="btn btn_orange">DETAIL</a>
+					</div>
 				</div>
 			</div>
 
 			<div class="posedli-content posedli-content__detail-container posedli-content__detail-container_third" id="yemi">
-			<div id="trigger2"></div>
 				<div class="posedli-content__detail-text">
+				<div
 					<h1 class="posedli-content__title_detail">YEMI AD</h1>
 					<p class="posedli-content__paragraph_detail">TwinPower Turbo engines, eight speeds and three distinct driving models all contribute to the enhanced performance of the new MINI Clubman. Hear from Manager Process Powertrain on the power and go-kart feeling of the car.</p>
 					<a href="#" class="btn btn_orange">DETAIL</a>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</section> 
 
@@ -223,7 +243,7 @@
 		</div>
 	</section> 
 
-<!----------------------------------------- -->
+<!-------- footer ------------------------- -->
 	<footer class="footer">
 		<div class="container container_footer">
 			<div class="wrapper wrapper_footer">
